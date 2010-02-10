@@ -132,7 +132,7 @@ void Breakout::startGame()
     gameOver = FALSE; 
     gameWon = FALSE; 
     gameStarted = TRUE;
-    timerId = startTimer(10);  
+    timerId = startTimer(15);//the speed of the ball
   }
 }
 
