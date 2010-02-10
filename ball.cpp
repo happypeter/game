@@ -27,7 +27,7 @@ void Ball::autoMove()
     xdir = 1;
   }
 
-  if (rect.right() == 300) {
+  if (rect.right() == 400) {
     xdir = -1;
   }
 

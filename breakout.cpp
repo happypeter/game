@@ -18,7 +18,7 @@ Breakout::Breakout(QWidget *parent)
   int k = 0;
   for (int i=0; i<5; i++) {
     for (int j=0; j<6; j++) {
-      bricks[k] = new Brick(j*40+30, i*10+50);
+      bricks[k] = new Brick(j*60+30, i*20+50);
       k++; 
     }
   }
@@ -89,14 +89,14 @@ void Breakout::keyPressEvent(QKeyEvent *event)
     case Qt::Key_Left:
        {  
          int x = paddle->getRect().x();
-        for (int i=1; i<=5; i++)
+        for (int i=1; i<=20; i++)
           paddle->moveLeft(x--);
         break;
        }
     case Qt::Key_Right:
         { 
           int x = paddle->getRect().x();
-          for (int i=1; i<=5; i++)
+          for (int i=1; i<=20; i++)
             paddle->moveRight(x++);
         }
         break;
@@ -132,7 +132,7 @@ void Breakout::startGame()
     gameOver = FALSE; 
     gameWon = FALSE; 
     gameStarted = TRUE;
-    timerId = startTimer(15);//the speed of the ball
+    timerId = startTimer(10);//the speed of the ball
   }
 }
 

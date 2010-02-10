@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     Breakout brout;
-    brout.resize(300,450);
+    brout.resize(420,450);
     brout.show();
     return app.exec();
 }

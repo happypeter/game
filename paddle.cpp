@@ -22,13 +22,13 @@ void Paddle::moveLeft(int left)
 
 void Paddle::moveRight(int right)
 {
-  if (rect.right() <= 298)
+  if (rect.right() <= 400)
     rect.moveTo(right, rect.top());
 }
 
 void Paddle::resetState()
 {
-  rect.moveTo(200, 380);
+  rect.moveTo(200, 400);
 }
 
 QRect Paddle::getRect()
