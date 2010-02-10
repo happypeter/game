@@ -1,0 +1,6 @@
+Makefile
+game
+
+game.pro
+moc_*
+
